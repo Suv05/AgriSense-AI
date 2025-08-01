@@ -1,0 +1,547 @@
+[
+  {
+    "name": "Sitapur",
+    "lat": 27.5667,
+    "lon": 80.6833
+  },
+  {
+    "name": "Bijnor",
+    "lat": 29.3667,
+    "lon": 78.1333
+  },
+  {
+    "name": "Azamgarh",
+    "lat": 26.06,
+    "lon": 83.1861
+  },
+  {
+    "name": "Barabanki",
+    "lat": 26.9274,
+    "lon": 81.1948
+  },
+  {
+    "name": "Rohtas",
+    "lat": 24.6343,
+    "lon": 83.964
+  },
+  {
+    "name": "Gaya",
+    "lat": 24.7833,
+    "lon": 85
+  },
+  {
+    "name": "Madhubani",
+    "lat": 26.3667,
+    "lon": 86.0833
+  },
+  {
+    "name": "Purnia",
+    "lat": 25.7833,
+    "lon": 87.4667
+  },
+  {
+    "name": "Sehore",
+    "lat": 23.2,
+    "lon": 77.0833
+  },
+  {
+    "name": "Vidisha",
+    "lat": 23.5333,
+    "lon": 77.8167
+  },
+  {
+    "name": "Hoshangabad",
+    "lat": 22.75,
+    "lon": 77.7167
+  },
+  {
+    "name": "Chhindwara",
+    "lat": 22.0667,
+    "lon": 78.9333
+  },
+  {
+    "name": "Jabalpur",
+    "lat": 23.167,
+    "lon": 79.9501
+  },
+  {
+    "name": "Ludhiana",
+    "lat": 30.9,
+    "lon": 75.85
+  },
+  {
+    "name": "Patiala",
+    "lat": 30.3267,
+    "lon": 76.4003
+  },
+  {
+    "name": "Sangrur",
+    "lat": 30.2333,
+    "lon": 75.8333
+  },
+  {
+    "name": "Bathinda",
+    "lat": 30.2,
+    "lon": 74.95
+  },
+  {
+    "name": "Moga",
+    "lat": 30.8,
+    "lon": 75.1667
+  },
+  {
+    "name": "Karnal",
+    "lat": 29.6833,
+    "lon": 76.9833
+  },
+  {
+    "name": "Hisar",
+    "lat": 29.1667,
+    "lon": 75.7167
+  },
+  {
+    "name": "Kurukshetra",
+    "lat": 29.9694,
+    "lon": 76.8483
+  },
+  {
+    "name": "Sirsa",
+    "lat": 29.5333,
+    "lon": 75.0167
+  },
+  {
+    "name": "Fatehabad",
+    "lat": 29.5167,
+    "lon": 75.45
+  },
+  {
+    "name": "Kota",
+    "lat": 25.1833,
+    "lon": 75.8333
+  },
+  {
+    "name": "Baran",
+    "lat": 25.1,
+    "lon": 76.5167
+  },
+  {
+    "name": "Banswara",
+    "lat": 23.55,
+    "lon": 74.45
+  },
+  {
+    "name": "Alwar",
+    "lat": 27.5667,
+    "lon": 76.6
+  },
+  {
+    "name": "Raipur",
+    "lat": 21.2333,
+    "lon": 81.6333
+  },
+  {
+    "name": "Bilaspur",
+    "lat": 22.0833,
+    "lon": 82.15
+  },
+  {
+    "name": "Kanker",
+    "lat": 20.2719,
+    "lon": 81.4931
+  },
+  {
+    "name": "Dhamtari",
+    "lat": 20.7072,
+    "lon": 81.5497
+  },
+  {
+    "name": "Koraput",
+    "lat": 18.8167,
+    "lon": 82.7167
+  },
+  {
+    "name": "Bargarh",
+    "lat": 21.3333,
+    "lon": 83.6167
+  },
+  {
+    "name": "Malkangiri",
+    "lat": 18.35,
+    "lon": 81.9
+  },
+  {
+    "name": "puri",
+    "lat": 19.8,
+    "lon": 85.85
+  },
+  {
+    "name": "bhubaneswar",
+    "lat": 20.2333,
+    "lon": 85.8333
+  },
+  {
+    "name": "Ranchi",
+    "lat": 23.35,
+    "lon": 85.3333
+  },
+  {
+    "name": "Gumla",
+    "lat": 23.05,
+    "lon": 84.55
+  },
+  {
+    "name": "Simdega",
+    "lat": 22.6167,
+    "lon": 84.5167
+  },
+  {
+    "name": "Hazaribagh",
+    "lat": 23.9833,
+    "lon": 85.35
+  },
+  {
+    "name": "Bankura",
+    "lat": 23.25,
+    "lon": 87.0667
+  },
+  {
+    "name": "Murshidabad",
+    "lat": 24.1833,
+    "lon": 88.2667
+  },
+  {
+    "name": "Malda",
+    "lat": 25.0057,
+    "lon": 88.1398
+  },
+  {
+    "name": "Nagaon",
+    "lat": 26.3482,
+    "lon": 92.6858
+  },
+  {
+    "name": "Barpeta",
+    "lat": 26.3167,
+    "lon": 91
+  },
+  {
+    "name": "Dhubri",
+    "lat": 26.0333,
+    "lon": 89.9667
+  },
+  {
+    "name": "Golaghat",
+    "lat": 26.5167,
+    "lon": 93.9667
+  },
+  {
+    "name": "Guntur",
+    "lat": 16.3,
+    "lon": 80.45
+  },
+  {
+    "name": "Krishna",
+    "lat": 16.4104,
+    "lon": 77.3325
+  },
+  {
+    "name": "Nellore",
+    "lat": 14.4333,
+    "lon": 79.9667
+  },
+  {
+    "name": "Anantapur",
+    "lat": 14.6833,
+    "lon": 77.6
+  },
+  {
+    "name": "Nizamabad",
+    "lat": 18.6667,
+    "lon": 78.1167
+  },
+  {
+    "name": "Karimnagar",
+    "lat": 18.4333,
+    "lon": 79.15
+  },
+  {
+    "name": "Khammam",
+    "lat": 17.25,
+    "lon": 80.15
+  },
+  {
+    "name": "Mahbubnagar",
+    "lat": 16.7333,
+    "lon": 77.9833
+  },
+  {
+    "name": "Warangal",
+    "lat": 18,
+    "lon": 79.5833
+  },
+  {
+    "name": "Thanjavur",
+    "lat": 10.8,
+    "lon": 79.15
+  },
+  {
+    "name": "Erode",
+    "lat": 11.35,
+    "lon": 77.7333
+  },
+  {
+    "name": "Salem",
+    "lat": 11.65,
+    "lon": 78.1667
+  },
+  {
+    "name": "Villupuram",
+    "lat": 11.9333,
+    "lon": 79.4833
+  },
+  {
+    "name": "Coimbatore",
+    "lat": 11,
+    "lon": 76.9667
+  },
+  {
+    "name": "Mandya",
+    "lat": 12.5242,
+    "lon": 76.8958
+  },
+  {
+    "name": "Tumakuru",
+    "lat": 13.3401,
+    "lon": 77.1006
+  },
+  {
+    "name": "Belagavi",
+    "lat": 15.8573,
+    "lon": 74.5069
+  },
+  {
+    "name": "Mysuru",
+    "lat": 12.3072,
+    "lon": 76.6497
+  },
+  {
+    "name": "Raichur",
+    "lat": 16.2,
+    "lon": 77.3667
+  },
+  {
+    "name": "Idukki",
+    "lat": 9.85,
+    "lon": 76.9667
+  },
+  {
+    "name": "Palakkad",
+    "lat": 10.7833,
+    "lon": 76.65
+  },
+  {
+    "name": "Kottayam",
+    "lat": 9.5833,
+    "lon": 76.5167
+  },
+  {
+    "name": "Thrissur",
+    "lat": 10.5167,
+    "lon": 76.2167
+  },
+  {
+    "name": "Rajkot",
+    "lat": 22.3,
+    "lon": 70.7833
+  },
+  {
+    "name": "Junagadh",
+    "lat": 21.5167,
+    "lon": 70.4667
+  },
+  {
+    "name": "Surendranagar",
+    "lat": 22.7,
+    "lon": 71.6833
+  },
+  {
+    "name": "Nashik",
+    "lat": 19.9833,
+    "lon": 73.8
+  },
+  {
+    "name": "Ahmednagar",
+    "lat": 19.0833,
+    "lon": 74.7333
+  },
+  {
+    "name": "Jalgaon",
+    "lat": 21.0167,
+    "lon": 75.5667
+  },
+  {
+    "name": "Nagpur",
+    "lat": 21.15,
+    "lon": 79.1
+  },
+  {
+    "name": "Solapur",
+    "lat": 17.6833,
+    "lon": 75.9167
+  },
+  {
+    "name": "Nainital",
+    "lat": 29.3974,
+    "lon": 79.4469
+  },
+  {
+    "name": "Almora",
+    "lat": 29.6167,
+    "lon": 79.6667
+  },
+  {
+    "name": "Haridwar",
+    "lat": 29.9667,
+    "lon": 78.1667
+  },
+  {
+    "name": "Kangra",
+    "lat": 32.1,
+    "lon": 76.2667
+  },
+  {
+    "name": "Mandi",
+    "lat": 31.7167,
+    "lon": 76.9167
+  },
+  {
+    "name": "Shimla",
+    "lat": 31.1,
+    "lon": 77.1667
+  },
+  {
+    "name": "Solan",
+    "lat": 30.9167,
+    "lon": 77.1167
+  },
+  {
+    "name": "Kullu",
+    "lat": 31.9579,
+    "lon": 77.1089
+  },
+  {
+    "name": "Goa",
+    "lat": 15.3333,
+    "lon": 74.0833
+  },
+  {
+    "name": "Tripura",
+    "lat": 24,
+    "lon": 92
+  },
+  {
+    "name": "Imphal",
+    "lat": 24.8167,
+    "lon": 93.95
+  },
+  {
+    "name": "Thoubal",
+    "lat": 24.6333,
+    "lon": 94.0167
+  },
+  {
+    "name": "Churachandpur",
+    "lat": 24.3333,
+    "lon": 93.6667
+  },
+  {
+    "name": "Dimapur",
+    "lat": 25.9,
+    "lon": 93.7333
+  },
+  {
+    "name": "Kohima",
+    "lat": 25.6667,
+    "lon": 94.1167
+  },
+  {
+    "name": "Mokokchung",
+    "lat": 26.3333,
+    "lon": 94.5333
+  },
+  {
+    "name": "Aizawl",
+    "lat": 23.7333,
+    "lon": 92.7167
+  },
+  {
+    "name": "Lunglei",
+    "lat": 22.8833,
+    "lon": 92.7333
+  },
+  {
+    "name": "Sikkim",
+    "lat": 27.75,
+    "lon": 88.5
+  },
+  {
+    "name": "Delhi",
+    "lat": 28.6667,
+    "lon": 77.2167
+  },
+  {
+    "name": "Karaikal",
+    "lat": 10.9167,
+    "lon": 79.8333
+  },
+  {
+    "name": "Anantnag",
+    "lat": 33.7333,
+    "lon": 75.15
+  },
+  {
+    "name": "Baramulla",
+    "lat": 34.2087,
+    "lon": 74.3435
+  },
+  {
+    "name": "Kupwara",
+    "lat": 34.0306,
+    "lon": 74.2642
+  },
+  {
+    "name": "Udhampur",
+    "lat": 32.9333,
+    "lon": 75.1333
+  },
+  {
+    "name": "Leh",
+    "lat": 34.1667,
+    "lon": 77.5833
+  },
+  {
+    "name": "Kargil",
+    "lat": 34.5667,
+    "lon": 76.1
+  },
+  {
+    "name": "Kavaratti",
+    "lat": 10.5669,
+    "lon": 72.642
+  },
+  {
+    "name": "Silvassa",
+    "lat": 20.2667,
+    "lon": 73.0167
+  },
+  {
+    "name": "Daman",
+    "lat": 20.4167,
+    "lon": 72.85
+  },
+  {
+    "name": "Diu",
+    "lat": 20.7141,
+    "lon": 70.9822
+  }
+]
