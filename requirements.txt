@@ -1,2 +1,6 @@
 google-cloud-pubsub
 python-dotenv
+requests
+pandas
+bs4
+earthengine-api
