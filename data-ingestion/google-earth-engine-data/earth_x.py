@@ -151,7 +151,7 @@ def remote_sensing_data(location):
 
 
 # Load config.json for locations
-with open("./config.json", "r") as f:
+with open("./data-ingestion/google-earth-engine-data/config.json", "r") as f:
     LOCATIONS = json.load(f)
 
 
