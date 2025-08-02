@@ -16,7 +16,7 @@ load_dotenv()
 api_key = os.getenv("OPEN_WEATHER_API_KEY_1")
 
 # Load config from file (once)
-with open("./config.json", "r") as f:
+with open("./data-ingestion/google-earth-engine-data/config.json", "r") as f:
     LOCATIONS = json.load(f)
 
 
