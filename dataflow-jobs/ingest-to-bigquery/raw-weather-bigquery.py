@@ -88,3 +88,5 @@ def run():
 
 if __name__ == "__main__":
     run()
+
+# python raw-weather-bigquery.py --runner=DataflowRunner --project=careful-trainer-p1 --region=asia-south1 --worker_zone=asia-south1-b --worker_machine_type=e2-small --num_workers=1 --max_num_workers=3 --temp_location=gs://careful-trainer-p1-dataflow-temp/temp --staging_location=gs://careful-trainer-p1-dataflow-temp/staging --job_name=ingest-weather-data-bigquery-v1 --save_main_session
