@@ -11,8 +11,6 @@ def parse_and_flatten_json(record):
             "lon": data.get("coord", {}).get("lon"),
             "lat": data.get("coord", {}).get("lat"),
             "temp": data.get("main", {}).get("temp"),
-            "temp_min": data.get("main", {}).get("temp_min"),
-            "temp_max": data.get("main", {}).get("temp_max"),
             "pressure": data.get("main", {}).get("pressure"),
             "humidity": data.get("main", {}).get("humidity"),
             "sea_level": data.get("main", {}).get("sea_level"),
@@ -54,8 +52,6 @@ def run():
             {"name": "lon", "type": "FLOAT", "mode": "REQUIRED"},
             {"name": "lat", "type": "FLOAT", "mode": "REQUIRED"},
             {"name": "temp", "type": "FLOAT"},
-            {"name": "temp_min", "type": "FLOAT"},
-            {"name": "temp_max", "type": "FLOAT"},
             {"name": "pressure", "type": "INTEGER"},
             {"name": "humidity", "type": "INTEGER"},
             {"name": "sea_level", "type": "INTEGER"},
@@ -66,7 +62,7 @@ def run():
             {"name": "weather_main", "type": "STRING"},
             {"name": "weather_description", "type": "STRING"},
             {"name": "country", "type": "STRING"},
-            {"name": "location", "type": "STRING"},
+            {"name": "location", "type": "STRING", "mode": "REQUIRED"},
             {"name": "timestamp", "type": "TIMESTAMP"}
         ]
     }
@@ -89,4 +85,4 @@ def run():
 if __name__ == "__main__":
     run()
 
-# python raw-weather-bigquery.py --runner=DataflowRunner --project=careful-trainer-p1 --region=asia-south1 --worker_zone=asia-south1-b --worker_machine_type=e2-small --num_workers=1 --max_num_workers=3 --temp_location=gs://careful-trainer-p1-dataflow-temp/temp --staging_location=gs://careful-trainer-p1-dataflow-temp/staging --job_name=ingest-weather-data-bigquery-v1 --save_main_session
+# python raw-weather-bigquery.py --runner=DataflowRunner --project=careful-trainer-p1 --region=asia-south1 --worker_zone=asia-south1-b --worker_machine_type=e2-small --num_workers=1 --max_num_workers=3 --temp_location=gs://careful-trainer-p1-dataflow-temp/temp --staging_location=gs://careful-trainer-p1-dataflow-temp/staging --job_name=ingest-weather-data-bigquery-v2 --save_main_session
