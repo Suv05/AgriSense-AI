@@ -4,3 +4,4 @@ requests
 pandas
 bs4
 earthengine-api
+apache-beam[gcp]
