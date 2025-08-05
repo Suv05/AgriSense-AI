@@ -1,7 +1,6 @@
 import apache_beam as beam
 from apache_beam.options.pipeline_options import PipelineOptions, GoogleCloudOptions, StandardOptions
 import json
-import datetime
 
 class ParseEarthEngineJson(beam.DoFn):
     def process(self, element):
