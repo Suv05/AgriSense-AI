@@ -50,7 +50,7 @@ def remote_sensing_data(location):
     try:
         sentinel = (
             ee.ImageCollection("COPERNICUS/S2_HARMONIZED")
-            .filterDate("2025-05-01", "2025-06-01")
+            .filterDate("2025-07-05", "2025-08-05")
             .filterBounds(roi)
             .filter(ee.Filter.lt("CLOUDY_PIXEL_PERCENTAGE", 20))
             .map(mask_s2_clouds)
