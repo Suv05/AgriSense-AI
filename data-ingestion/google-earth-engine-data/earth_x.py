@@ -83,7 +83,7 @@ def remote_sensing_data(location):
         # pull SMAP soil moisture data
         smap = (
             ee.ImageCollection("ECMWF/ERA5_LAND/HOURLY")
-            .filterDate("2025-05-01", "2025-06-01")
+            .filterDate("2025-07-01", "2025-07-31")
             .filterBounds(roi)
         )
 
@@ -98,7 +98,7 @@ def remote_sensing_data(location):
         # humidity and temperature
         era5 = (
             ee.ImageCollection("ECMWF/ERA5_LAND/HOURLY")
-            .filterDate("2025-05-01", "2025-06-01")
+            .filterDate("2025-07-01", "2025-07-31")
             .filterBounds(roi)
         )
 
