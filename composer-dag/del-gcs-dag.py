@@ -5,7 +5,7 @@ from datetime import datetime
 with DAG(
     dag_id="daily_gcs_cleanup",
     start_date=datetime(2025, 1, 1),
-    schedule_interval="30 5 * * *",  # Runs daily at 11:00 AM IST (5:30 UTC)
+    schedule_interval="30 17 * * *",
     catchup=False,
     tags=['gcs', 'cleanup'],
 ) as dag:
