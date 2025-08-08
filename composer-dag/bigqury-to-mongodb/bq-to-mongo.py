@@ -25,7 +25,13 @@ def bq_to_mongo(**kwargs):
     query = f"SELECT * FROM `{BIGQUERY_TABLE}`"
     df = bq_client.query(query).to_dataframe()
 
-    # Add ingestion timestamp column (current time in IST)
+    # Convert ARRAY<STRUCT<>> column to Python list of dicts
+    if 'predicted_irrigation_need_probs' in df.columns:
+        df['predicted_irrigation_need_probs'] = df['predicted_irrigation_need_probs'].apply(
+            lambda x: [dict(label=val['label'], prob=val['prob']) for val in x]
+        )
+
+    # Add ingestion timestamp (IST timezone)
     ist = pytz.timezone('Asia/Kolkata')
     ingestion_time = datetime.now(ist).isoformat()
     df['ingestion_time'] = ingestion_time
@@ -35,16 +41,18 @@ def bq_to_mongo(**kwargs):
     db = mongo_client[MONGO_DB]
     collection = db[MONGO_COLLECTION]
 
-    # # Clear existing documents (optional — remove if not needed)
-    # collection.delete_many({})
-
-    # Insert into MongoDB
+    # Convert DataFrame to records
     records = df.to_dict("records")
+
     if records:
+        # Optional: Remove any _id field to avoid ObjectId issues
+        for record in records:
+            record.pop("_id", None)
         collection.insert_many(records)
         print(f"{len(records)} records inserted.")
     else:
         print("No records found to insert.")
+
 
 # === DAG DEFINITION ===
 with DAG(
