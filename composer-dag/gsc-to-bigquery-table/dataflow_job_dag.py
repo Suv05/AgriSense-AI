@@ -1,7 +1,5 @@
 from __future__ import annotations
-
 import os
-import sys
 from datetime import datetime, timedelta
 
 import pytz
@@ -11,12 +9,10 @@ from airflow.operators.python import PythonOperator
 # === Import your Dataflow job scripts ===
 # Get the directory of the current DAG file
 dag_dir = os.path.dirname(os.path.abspath(__file__))
-# Add the dataflow-jobs subdirectory to the Python path
-sys.path.append(os.path.join(dag_dir, "dataflow-jobs"))
 
-# Import the functions that contain your Dataflow pipeline logic
-from ingest_weather_dataflow_batch import ingest_weather_dataflow
-from ingest_gee_dataflow_batch import ingest_gee_dataflow
+from dataflow_jobs.ingest_weather_dataflow_batch import ingest_weather_dataflow
+from dataflow_jobs.ingest_gee_dataflow_batch import ingest_gee_dataflow
+
 
 # === Define default arguments for the DAG ===
 default_args = {

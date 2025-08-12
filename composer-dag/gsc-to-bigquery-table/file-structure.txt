@@ -1,0 +1,7 @@
+dags/
+├── dataflow_job_dag.py
+├── setup.py
+└── dataflow_jobs/
+    ├── __init__.py
+    ├── ingest_weather_dataflow_batch.py
+    └── ingest_gee_dataflow_batch.py

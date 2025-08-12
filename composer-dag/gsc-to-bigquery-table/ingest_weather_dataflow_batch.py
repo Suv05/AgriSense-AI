@@ -1,5 +1,6 @@
+import os
 import apache_beam as beam
-from apache_beam.options.pipeline_options import PipelineOptions, GoogleCloudOptions, StandardOptions
+from apache_beam.options.pipeline_options import PipelineOptions, GoogleCloudOptions, StandardOptions, WorkerOptions
 import json
 import datetime
 
@@ -42,16 +43,29 @@ def ingest_weather_dataflow():
         dataset_id = "precision_dataset"
         table_id = "weather_data"
 
-        # Configure pipeline options
-        options = PipelineOptions()
+        # Configure pipeline options with cost-effective settings
+        options = PipelineOptions(
+            setup_file=os.path.join(os.path.dirname(__file__), "..", "setup.py")
+        )
+        
+        # Google Cloud options
         google_cloud_options = options.view_as(GoogleCloudOptions)
         google_cloud_options.project = project_id
         google_cloud_options.region = region
-        google_cloud_options.job_name = f"weather-ingestion-job-{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}"
+        google_cloud_options.job_name = "ingest-weather-data-bigquery-v2"
         google_cloud_options.staging_location = f"gs://{project_id}-dataflow-temp/staging"
         google_cloud_options.temp_location = f"gs://{project_id}-dataflow-temp/temp"
 
-        options.view_as(StandardOptions).runner = "DataflowRunner"
+        # Standard options
+        standard_options = options.view_as(StandardOptions)
+        standard_options.runner = "DataflowRunner"
+
+        # Worker options for cost optimization
+        worker_options = options.view_as(WorkerOptions)
+        worker_options.machine_type = "e2-small"
+        worker_options.num_workers = 1
+        worker_options.max_num_workers = 3
+        worker_options.zone = "asia-south1-b"
 
         table_spec = f"{project_id}:{dataset_id}.{table_id}"
 
