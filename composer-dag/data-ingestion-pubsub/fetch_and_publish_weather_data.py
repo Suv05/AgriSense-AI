@@ -21,7 +21,7 @@ def ingest_weather_data():
     # Load locations from the config.json file which must be deployed with the function.
     try:
         storage_client = storage.Client()
-        bucket_name = "asia-south1-data-ingestion-de14e7ec-bucket" # Use your bucket name
+        bucket_name = "asia-south1-data-ingestion--de14e7ec-bucket" # Use your bucket name
         blob = storage_client.bucket(bucket_name).blob("dags/data-ingestion/config.json")
         LOCATIONS = json.loads(blob.download_as_string())
     except Exception as e:
