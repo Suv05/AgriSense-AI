@@ -25,7 +25,8 @@
 
 ## 🏗️ System Architecture
 
-<img width="1711" height="1111" alt="Agrisense-AI drawio (1)" src="https://github.com/user-attachments/assets/50c6e091-0c0c-4195-b797-016fac6027ca" />
+
+<img width="1711" height="1111" alt="Agrisense-AI drawio (1) drawio" src="https://github.com/user-attachments/assets/e26bdc27-5dde-4b7d-bea5-34be96784bcc" />
 
 
 ---
